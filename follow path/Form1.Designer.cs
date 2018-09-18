@@ -48,10 +48,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(146, 125);
+            this.pictureBox1.Location = new System.Drawing.Point(87, 133);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(225, 225);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.Size = new System.Drawing.Size(173, 179);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -61,9 +61,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(80, 26);
             this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
+            this.button2.Text = "triangle";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.button2_ClickAsync);
             // 
             // Form1
             // 
@@ -77,7 +77,6 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
