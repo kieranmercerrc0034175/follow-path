@@ -19,7 +19,7 @@ namespace follow_path
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i < 20; i++)
+            for (int i = 0; i < 20; i++)
             {
                 pictureBox1.Location = new Point(pictureBox1.Location.X + 4, pictureBox1.Location.Y);
                 await Task.Delay(50);
@@ -60,11 +60,22 @@ namespace follow_path
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private async void button3_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < 5; int++)
+            int d;
+            try
             {
-                pictureBox1.Location = new Point(pictureBox1.Location.X + 5; pictureBox1.Location.Y);
+                d = Convert.ToInt32(textBox1.Text);
+            }
+            catch
+            {
+                MessageBox.Show("put in a number!");
+                d = 10;
+            }
+            for (int i = 0; i < 10; i++)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Location.Y);
+                await Task.Delay(d);
             }
         }
     }
